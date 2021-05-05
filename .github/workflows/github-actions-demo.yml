@@ -7,16 +7,13 @@ on:
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to update gist
     steps:
     - uses: actions/checkout@v2
-    - name: Hello world action step
+    - name: Update gist sample code
       id: hello
-      uses: phongnm-dev/action-kuc-demo@1.0.7
+      uses: phongnm-dev/action-kuc-demo@1.0.8
       with:
         doc-folder: 'docs'
         gist-username: 'phongnm-dev'
         gist-token: ${{ secrets.GISTTOKEN }}
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
