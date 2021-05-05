@@ -28,7 +28,7 @@ jobs:
       id: hello
       uses: phongnm-dev/action-kuc-demo@1.0.1
       with:
-        doc-folder: './docs'
+        doc-folder: 'docs'
         gist-username: 'phongnm-dev'
         gist-token: ${{ secrets.GISTTOKEN }}
     # Use the output from the `hello` step
