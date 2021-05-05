@@ -5,7 +5,7 @@ on:
       - main
     types: [closed]
 jobs:
-  hello_world_job:
+  sync-gist-sample-code:
     runs-on: ubuntu-latest
     name: A job to update gist
     steps:
