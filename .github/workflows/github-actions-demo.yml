@@ -26,7 +26,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: phongnm-dev/action-kuc-demo@1.0.3
+      uses: phongnm-dev/action-kuc-demo@1.0.4
       with:
         doc-folder: 'docs'
         gist-username: 'phongnm-dev'
