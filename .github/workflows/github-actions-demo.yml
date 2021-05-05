@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Hello world action step
       id: hello
-      uses: phongnm-dev/action-kuc-demo@1.0.6
+      uses: phongnm-dev/action-kuc-demo@1.0.7
       with:
         doc-folder: 'docs'
         gist-username: 'phongnm-dev'
