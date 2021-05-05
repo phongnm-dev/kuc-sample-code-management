@@ -26,9 +26,11 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: phongnm-dev/action-kuc-demo@v1.0.0
+      uses: phongnm-dev/action-kuc-demo@1.0.1
       with:
-        who-to-greet: 'Mona the Octocat'
+        doc-folder: './docs'
+        gist-username: 'phongnm-dev'
+        gist-token: ${{ secrets.GISTTOKEN }}
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
