@@ -4,6 +4,7 @@ const button = new Kuc.Button({
   id: 'kuc_button'
 });
 
+// add Event
 // 表示したボタンに click イベントの処理を追加
 button.addEventListener('click', event => {      
   const keyword = text.value;

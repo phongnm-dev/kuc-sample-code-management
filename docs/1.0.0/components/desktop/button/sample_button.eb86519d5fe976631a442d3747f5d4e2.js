@@ -9,4 +9,5 @@ const button = new Kuc.Button({
 });
 header.appendChild(button);
 
+// add Event
 button.addEventListener('click', event => console.log(event));
